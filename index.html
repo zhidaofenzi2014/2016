@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站示例</title>
+    <style>
+        body, h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s ease;
+        }
+        header a:hover {
+            background: #555;
+        }
+        header #branding {
+            font-size: 2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        #showcase {
+            background: url('your-image-url.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            font-size: 4rem;
+        }
+        #main {
+            padding: 2rem 0;
+            background: #fff;
+        }
+        #main .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #main .box {
+            flex: 1;
+            margin: 1rem;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            header #branding, header nav {
+                float: none;
+                text-align: center;
+            }
+            header nav ul {
+                padding: 0;
+            }
+            header nav ul li {
+                display: block;
+                padding: 0.5rem 0;
+            }
+            #main .box {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="#">李博勋的网站</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>欢迎来到李博勋的网站</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div class="box">
+                <h3>服务一</h3>
+                <p>这里是服务一的详细信息。</p>
+            </div>
+            <div class="box">
+                <h3>服务二</h3>
+                <p>这里是服务二的详细信息。</p>
+            </div>
+            <div class="box">
+                <h3>服务三</h3>
+                <p>这里是服务三的详细信息。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>版权所有 &copy; 2024 我的网站</p>
+        </div>
+    </footer>
+</body>
+</html>
